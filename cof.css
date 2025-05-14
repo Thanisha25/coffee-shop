@@ -1,0 +1,276 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header Styling */
+h1, h2, p {
+  color: #2c3e50; /* Dark Blue color for headers */
+}
+
+#home h1 {
+  font-size: 36px;
+  color: #e67e22; /* Set color for main header */
+}
+
+#home p {
+  font-size: 20px;
+  color: #34495e; /* Set color for description text */
+}
+
+/* Menu Section */
+#menu {
+  padding: 20px;
+  text-align: center;
+}
+
+#menu h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #e67e22; /* Set color for menu header */
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap; /* This allows wrapping to the next line */
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px; /* Space between menu items */
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Width for each menu item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.menu-item h2 {
+  margin-top: 15px;
+}
+
+.menu-item p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.menu-item .quantity {
+  width: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-item .add-to-cart-btn {
+  padding: 10px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item .add-to-cart-btn:hover {
+  background-color: #d35400;
+}
+
+/* Order Now Button at the Bottom of Menu */
+.order-now-btn {
+  padding: 15px 30px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-now-btn:hover {
+  background-color: #d35400;
+}
+
+/* Order Modal */
+.order-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+ display: flex;               /* Flex layout */
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  z-index: 1000;
+}
+
+
+/* Modal Content */
+.order-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+  position: relative; /* Not absolute or fixed */
+}
+
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.order-modal-content h2 {
+  margin-bottom: 20px;
+}
+.order-modal-content h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #2c3e50;
+  text-align: center; /* Ensures the total is centered */
+}
+
+/* Order items list inside modal */
+.order-items {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Ensure total is always centered */
+.order-total {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+#total-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+#checkout-btn {
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkout-btn:hover {
+  background-color: #d35400;
+}
+
+/* About Us Section */
+#about {
+  padding: 40px 20px;
+  background-color: #fff8f0;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #e67e22; /* Orange title */
+}
+
+.about p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #34495e; /* Dark gray text */
+  line-height: 1.6;
+}
+
+footer {
+  background-color: beige;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+footer h4 {
+  font-size: 14px;
+}
+/* Navbar Styles */
+header {
+  background-color: #2c3e50;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #e67e22;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fff8f0;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact h1 {
+  font-size: 32px;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  color: #34495e;
+  margin: 5px 0;
+}
